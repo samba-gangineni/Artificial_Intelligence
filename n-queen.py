@@ -73,6 +73,10 @@ def solve(board_size):
 
 		# Printing the board
 		print_board(board)
+		if moves > 2*board_size:
+			print "Starting over again"
+			board = randomise_queens(board)
+			moves = 0
 
 
 def print_board(board):
